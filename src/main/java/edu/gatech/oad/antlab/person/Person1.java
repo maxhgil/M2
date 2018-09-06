@@ -16,9 +16,7 @@ public class Person1 {
 	 * name
 	 * @param pname the person's real name
 	 */
-  public Person1(String pname) {
-    name = pname;
-  }
+  public Person1(String pname) { name = pname; }
   	/**
 	 * This method should take the string
 	 * input and return its characters rotated
@@ -30,8 +28,15 @@ public class Person1 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 1 put your implementation here
-	  return null;
+	  String name = "";
+	  int y = 1;
+	  for (x = 0; x < input.length(); x++) {
+          if (y == input.length()) {
+              y - input.length();
+          }
+          name += input.charAt(y);
+      }
+      return name;
 	}
 	
 	/**
