@@ -1,11 +1,12 @@
 package edu.gatech.oad.antlab.person;
+import java.lang.StringBuilder;
 
 /**
  *  A simple class for person 5
  *  returns their name and a
  *  modified string 
  *  
- *  @author Bob
+ *  @author Steven Butz
  *  @version 1.1
  */
 public class Person5 {
@@ -30,8 +31,14 @@ public class Person5 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 5 put your implementation here
-	  return null;
+        int length = input.length();
+        StringBuilder builder = new StringBuilder();
+        for (int i = 2; i < length + 2; i++) {
+            int current = i % length;
+            builder.append(input.charAt(current));
+        }
+        String output = builder.toString();
+        return output;
 	}
 	
 	/**
@@ -45,5 +52,4 @@ public class Person5 {
 	public String toString(String input) {
 	  return name + calc(input);
 	}
-
 }
