@@ -29,12 +29,13 @@ public class Person1 {
 	 */
 	private String calc(String input) {
 	  String tempname = "";
-	  int y = 1;
-	  for (x = 0; x < input.length(); x++) {
+	  int y = 2;
+	  for (int x = 0; x < input.length(); x++) {
           if (y == input.length()) {
-              y - input.length();
+              y = y - input.length();
           }
           tempname += input.charAt(y);
+          y++
       }
       return tempname;
 	}
