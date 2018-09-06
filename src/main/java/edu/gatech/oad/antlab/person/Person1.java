@@ -28,15 +28,15 @@ public class Person1 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  String name = "";
+	  String tempname = "";
 	  int y = 1;
 	  for (x = 0; x < input.length(); x++) {
           if (y == input.length()) {
               y - input.length();
           }
-          name += input.charAt(y);
+          tempname += input.charAt(y);
       }
-      return name;
+      return tempname;
 	}
 	
 	/**
