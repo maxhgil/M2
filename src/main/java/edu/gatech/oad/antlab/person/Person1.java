@@ -35,7 +35,7 @@ public class Person1 {
               y = y - input.length();
           }
           tempname += input.charAt(y);
-          y++
+          y++;
       }
       return tempname;
 	}
